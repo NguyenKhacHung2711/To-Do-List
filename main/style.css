@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #fafafae2;
+}
+
+#container {
+    height: 90vh;
+    margin: 20px auto;
+    /* background-color: rgb(232, 87, 87); */
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+#input-container {
+    height: 20px;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+#input-container input {
+    height: 30px;
+    font-weight: bold;
+}
+
+#input-container input::placeholder {
+    padding-left: 5px;
+}
+
+#addBtn {
+    height: 30px;
+    padding: 5px 10px;
+    background-color: yellowgreen;
+    font-weight: bold;
+}
+
+#work-list {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: fit-content;
+    list-style: none;
+    
+}
+
+#work-list li #contentTask {
+    min-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: salmon    ;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#work-list li #dltBtn {
+    height: 30px;
+    padding: 5px 10px;
+    background-color: rgba(168, 163, 163, 0.848);
+}
+
+#work-list li #editBtn {
+    height: 30px;
+    padding: 5px 10px;
+    background-color: yellowgreen;
+}
+
+#work-list li p {
+    padding: 5px 10px;
+}
+
+#work-list li .divBlock {
+    display: flex;
+}
+
+#work-list li .divBlock div {
+    margin-left: 5px;
+}
+
