@@ -43,9 +43,6 @@ function handleAddForm() {
 
         var getClassOfAddBtn = taskEdit.getAttribute("class");
 
-
-        // alert(getClassOfAddBtn)
-        // return false;
         
         if (getClassOfAddBtn) {
             var newContent = document.querySelector("#inputTask").value;
@@ -56,6 +53,9 @@ function handleAddForm() {
                 };
                 
                 editTask(newData)
+
+                taskEdit.removeAttribute("class");
+                taskEdit.textContent = "ADD";
                 
                 valInput.value = '';
                  
